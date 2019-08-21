@@ -15,14 +15,14 @@
       <ul class="nav">
         
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="<?= site_url('halaman/guru'); ?>">
             <i class="material-icons">dashboard</i>
             <p>Halaman Utama</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="<?= site_url('halaman/guru/materi'); ?>">
             <i class="material-icons">play_circle_filled</i>
             <p>Video Materi</p>
           </a>

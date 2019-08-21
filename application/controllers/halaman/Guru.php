@@ -20,6 +20,23 @@
 	 			redirect('Beranda');
 			}
 		}
+
+		public function materi()
+		{
+			if ( $this->session->userdata('status') == "login" ) {
+				if ( $this->session->userdata('level') == "guru" ) {
+
+					$this->load->view("halaman/templates/header");
+					$this->load->view("halaman/guru/halaman/video-materi");
+					$this->load->view("halaman/templates/footer");
+
+				} else {
+	 				redirect('Beranda');
+				}
+			} else {
+	 			redirect('Beranda');
+			}
+		}
 	
 	}
 	

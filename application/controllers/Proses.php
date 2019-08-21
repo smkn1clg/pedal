@@ -5,7 +5,7 @@ class Proses extends CI_Controller {
 
 	public function index()
 	{
-		redirect('Beranda');
+		redirect('beranda');
 	}
 
 	function prosesLogin()
@@ -36,14 +36,12 @@ class Proses extends CI_Controller {
 				redirect('halaman/guru');
 	 		} elseif ( $levelUser == "humas") {
 				redirect('halaman/humas');
-			} elseif ( $levelUser == "superadmin") {
-				redirect('halaman/superadmin');
-	 		} else {
-	 			redirect('Beranda');
+			} else {
+	 			redirect('Proses');
 	 		}
 
 		} else {
-	 		redirect('Beranda');
+	 		redirect('Proses');
 		} 
  
 	}
@@ -61,10 +59,10 @@ class Proses extends CI_Controller {
 			} elseif ( $this->session->userdata('level') == "superadmin") {
 				redirect('halaman/superadmin');
 	 		} else {
-	 			redirect('Beranda');
+	 			redirect('Proses');
 	 		}
 		} else {
-			redirect('Beranda');
+			redirect('Proses');
 		}
 
 	}
@@ -72,7 +70,7 @@ class Proses extends CI_Controller {
 	public function prosesLogout()
 	{
 	 	$this->session->sess_destroy();
-	 	redirect('Beranda');
+	 	redirect('Proses');
 	}
 
 }
