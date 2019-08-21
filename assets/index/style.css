@@ -1,0 +1,111 @@
+/*BASE*/
+body {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*GO*/
+.intro-section {
+  position: relative;
+}
+
+.intro-section, .intro-section .container > .row {
+  height: 100vh;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: .5rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+}
+
+.intro-section p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+}
+
+.slide-1 {
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-1:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #343a40;
+  opacity: .9;
+}
+
+.slide-1 .slide-text {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 50px;
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.slide-1 .slide-text.active {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+}
+
+.form-box {
+  padding: 40px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+}
+
+
+.penjelasan {
+  text-align: justify;
+}
+
+/*MOBILE*/
+@media (max-width: 991.98px) {
+
+  .centerTextMobile {
+    text-align: center;
+  }
+
+  .fullBtnMobile {
+    width: 100%;
+  }
+
+  .intro-section, .intro-section .container > .row {
+    height: 100%;
+  }
+}
